@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>widgetClass</class>
+ <widget class="QWidget" name="widgetClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>796</width>
+    <height>451</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Widget</string>
+  </property>
+  <property name="locale">
+   <locale language="Chinese" country="China"/>
+  </property>
+  <widget class="QPushButton" name="setABLineButton">
+   <property name="geometry">
+    <rect>
+     <x>320</x>
+     <y>290</y>
+     <width>171</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>setABLine</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="recvButton">
+   <property name="geometry">
+    <rect>
+     <x>60</x>
+     <y>290</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <property name="text">
+    <string>Start Receive</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="pilotButton">
+   <property name="geometry">
+    <rect>
+     <x>590</x>
+     <y>290</y>
+     <width>151</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Autopilot</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="exitButton">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>390</y>
+     <width>101</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>Exit</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="deInitialLabel">
+   <property name="geometry">
+    <rect>
+     <x>26</x>
+     <y>55</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="locale">
+    <locale language="Chinese" country="China"/>
+   </property>
+   <property name="text">
+    <string>disInitial</string>
+   </property>
+   <property name="buddy">
+    <cstring>deInitialLine</cstring>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="deInitialLine">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>50</y>
+     <width>131</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="deNorthInitialLabel">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>50</y>
+     <width>161</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>dNorthInitial</string>
+   </property>
+   <property name="buddy">
+    <cstring>dNorthInitialLine</cstring>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dNorthInitialLine">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>50</y>
+     <width>121</width>
+     <height>31</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="xLine">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>126</y>
+     <width>129</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="yLine">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>173</y>
+     <width>129</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="norLine">
+   <property name="geometry">
+    <rect>
+     <x>130</x>
+     <y>220</y>
+     <width>129</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="xPosition">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>121</y>
+     <width>101</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>XPosition</string>
+   </property>
+   <property name="buddy">
+    <cstring>xLine</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="yPosition">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>166</y>
+     <width>91</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>YPosition</string>
+   </property>
+   <property name="buddy">
+    <cstring>yLine</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="north">
+   <property name="geometry">
+    <rect>
+     <x>31</x>
+     <y>211</y>
+     <width>91</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>North</string>
+   </property>
+   <property name="buddy">
+    <cstring>norLine</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="deLabel">
+   <property name="geometry">
+    <rect>
+     <x>290</x>
+     <y>140</y>
+     <width>121</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>distance</string>
+   </property>
+   <property name="buddy">
+    <cstring>deLine</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="dNorthLabel">
+   <property name="geometry">
+    <rect>
+     <x>291</x>
+     <y>189</y>
+     <width>141</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>dNorth</string>
+   </property>
+   <property name="buddy">
+    <cstring>dNorthLine</cstring>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="deLine">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>140</y>
+     <width>129</width>
+     <height>27</height>
+    </rect>
+   </property>
+   <property name="readOnly">
+    <bool>false</bool>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="dNorthLine">
+   <property name="geometry">
+    <rect>
+     <x>390</x>
+     <y>190</y>
+     <width>129</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLabel" name="faiLabel">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>122</y>
+     <width>80</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>fai</string>
+   </property>
+   <property name="buddy">
+    <cstring>faiLine</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="thetaLabel">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>167</y>
+     <width>71</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>theta</string>
+   </property>
+   <property name="buddy">
+    <cstring>thetaLine</cstring>
+   </property>
+  </widget>
+  <widget class="QLabel" name="velocityLabel">
+   <property name="geometry">
+    <rect>
+     <x>560</x>
+     <y>212</y>
+     <width>81</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <pointsize>15</pointsize>
+    </font>
+   </property>
+   <property name="text">
+    <string>velocity</string>
+   </property>
+   <property name="buddy">
+    <cstring>velocityLine</cstring>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="faiLine">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>116</y>
+     <width>129</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="thetaLine">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>163</y>
+     <width>129</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="velocityLine">
+   <property name="geometry">
+    <rect>
+     <x>640</x>
+     <y>210</y>
+     <width>129</width>
+     <height>27</height>
+    </rect>
+   </property>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>recvButton</sender>
+   <signal>clicked()</signal>
+   <receiver>widgetClass</receiver>
+   <slot>receive_data()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>145</x>
+     <y>355</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>426</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>setABLineButton</sender>
+   <signal>clicked()</signal>
+   <receiver>widgetClass</receiver>
+   <slot>setABLine()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>425</x>
+     <y>359</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>321</x>
+     <y>283</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>pilotButton</sender>
+   <signal>clicked()</signal>
+   <receiver>widgetClass</receiver>
+   <slot>start_autopilot()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>681</x>
+     <y>351</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>592</x>
+     <y>286</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>exitButton</sender>
+   <signal>clicked()</signal>
+   <receiver>widgetClass</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>790</x>
+     <y>425</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>426</x>
+     <y>233</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>receive_data()</slot>
+  <slot>start_autopilot()</slot>
+  <slot>setABLine()</slot>
+ </slots>
+</ui>
